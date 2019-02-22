@@ -6,7 +6,7 @@ console.log('user answer:', Question1);
 
 if (Question1.toUpperCase() === 'Y'  ) {
   alert('great, You are correct. Lets move on');
-  var Question2 = prompt(' My favorite Car is Accord.Please answer yes/no Or y/n');
+  // var Question2 = prompt(' My favorite Car is Accord.Please answer yes/no Or y/n');
     var Question3 = prompt(' My favorite game is cricket.Please answer yes/no Or y/n');
     var Question4 = prompt(' I am a software engineer. Please answer yes/no Or y/n');
     var Question5 = prompt(' I am staying in US. Please answer yes/no Or y/n');
@@ -17,11 +17,17 @@ else {
   if (cont.toUpperCase()==='Y'){
     alert('I am going to ask next question');
 
-    var Question2 = prompt(' My favorite Car is Accord.Please answer yes/no Or y/n');
+    var Question2 = prompt('What is my favorite Car?');
+    if (checkanswer(0, Question2.toLowerCase()) === true) {
+      alert ('Yes you are correct!');
+    } 
+    else {
+      alert('Sorry, you are incorrect!');
+    }
     var Question3 = prompt(' My favorite game is cricket.Please answer yes/no Or y/n');
     var Question4 = prompt(' I am a software engineer. Please answer yes/no Or y/n');
     var Question5 = prompt(' I am staying in US. Please answer yes/no Or y/n');}
-    
+        
     else{
       alert('Thanks for your time');
     }
@@ -32,5 +38,16 @@ else {
     console.log('Question5:', Question5);
   }
 
+function checkanswer(quest,answ) {
+  var passd= false;
+  var answrs = ['accord'];
+  if (answ === answrs[quest])  {
+    passd = true;
+  }
+  else {
+    passd = false;
+  }
+  return passd;
+}
 
 

@@ -11,7 +11,7 @@ a {
     color: rgb(92, 92, 219);
 }
 header {
-    background:     rgb(85, 52, 204);
+    background:  rgb(185, 152, 204);
     color: #fff;
     Padding: 10px;
     text-align: center;
@@ -31,7 +31,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin: 20px;
-    fint-size: 24px;
+    font-size: 24px;
    
 }
 
